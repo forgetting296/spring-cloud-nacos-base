@@ -1,0 +1,10 @@
+server:
+  port: 8889
+spring:
+  application:
+    name: nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.211:8848
+        namespace: edc47e6c-33a1-49c5-b1ab-2a26d253d611
