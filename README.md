@@ -34,10 +34,3 @@ nacos-consumer   服务消费者
 返回：Hello acelee, this is nacos-provider message.
 
 说明客户端已经成功的通过feign调用了远程服务hello，并且将结果返回到了浏览器。
-
-
---------------------- 
-作者：艾斯-李 
-来源：CSDN 
-原文：https://blog.csdn.net/las723/article/details/88552443 
-版权声明：本文为博主原创文章，转载请附上博文链接！
