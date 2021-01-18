@@ -1,0 +1,16 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: acelee-alibaba-sentinel-nacos
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:9999
+      datasource:
+        ds:
+          nacos:
+            server-addr: 192.168.1.211:8848
+            dataId: ${spring.application.name}-sentinel
+            groupId: DEFAULT_GROUP
+            rule-type: flow
