@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: acelee-alibaba-sentinel
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:9999
+server:
+  port: 8001
