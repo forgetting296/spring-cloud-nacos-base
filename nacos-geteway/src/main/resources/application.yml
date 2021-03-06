@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    nacos:
+      discovery:
+        namespace: edc47e6c-33a1-49c5-b1ab-2a26d253d611
+        server-addr: 192.168.1.211:8848
+    gateway:
+      routes:
+        - id: nacos-provider
+          uri: lb://nacos-provider
+          predicates:
+            - Path=/hello/** #以hello开头的请求都负载到consumer服务
+    #          filters:
+    #            - RewritePath=/hello/(?<segment>.*), /$\{segment}

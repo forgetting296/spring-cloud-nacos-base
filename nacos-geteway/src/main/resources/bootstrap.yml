@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.211:8848
+        file-extension: yaml  #由于在nacos配置中心创建的配置是yaml格式的,所以在此指定
+        enabled: true  #默认为true,通过设置 spring.cloud.nacos.config.enabled = false 来完全关闭 Spring Cloud Nacos Config
+        namespace: edc47e6c-33a1-49c5-b1ab-2a26d253d611
+  application:
+    name: gateway-nacos  #此处的name跟nacos创建的gateway.yaml名称要是一致的
